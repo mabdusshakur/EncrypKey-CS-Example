@@ -37,7 +37,7 @@ namespace EncrypKey_CS_Example
                 data.Add("secret", "");
                 data.Add("name", "");
                 data.Add("license_key", license_tb.Text.ToString());
-                data.Add("hwid", "89-das-325");
+                data.Add("hwid", WindowsIdentity.GetCurrent().User.Value);
 
                 // Create JSON content
                 var jsonContent = new StringContent(JsonConvert.SerializeObject(data), Encoding.UTF8, "application/json");
