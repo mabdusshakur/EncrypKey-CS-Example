@@ -38,7 +38,6 @@
             this.license_tb.Name = "license_tb";
             this.license_tb.Size = new System.Drawing.Size(368, 20);
             this.license_tb.TabIndex = 0;
-            this.license_tb.TextChanged += new System.EventHandler(this.license_tb_TextChanged);
             // 
             // activate_btn
             // 

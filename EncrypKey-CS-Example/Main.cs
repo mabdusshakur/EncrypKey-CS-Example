@@ -10,11 +10,6 @@ namespace EncrypKey_CS_Example
             InitializeComponent();
         }
 
-        private void license_tb_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private async void activate_btn_Click(object sender, EventArgs e)
         {
             try
