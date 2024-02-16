@@ -12,6 +12,8 @@ namespace EncrypKey_CS_Example
 {
     internal class Api
     {
+        private string baseUrl = "http://127.0.0.1:8000/api/check-license";
+
         private string ownerId;
         private string secret;
         private string name;
@@ -23,7 +25,7 @@ namespace EncrypKey_CS_Example
             this.name = name;
         }
 
-        public async Task<string> PostData(string baseUrl, string licenseKey)
+        public async Task<string> PostData(string licenseKey)
         {
             try
             {
